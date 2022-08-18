@@ -4,15 +4,16 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	uuid "github.com/satori/go.uuid"
 	"os"
 	"strconv"
 	"strings"
 	"sync"
 	"testing"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/aliyun/aliyun-oss-go-sdk/oss"
+	uuid "github.com/satori/go.uuid"
 )
 
 var fileTypeMap sync.Map

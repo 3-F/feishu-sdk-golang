@@ -3,15 +3,16 @@ package sdk
 import (
 	"bytes"
 	"fmt"
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	http2 "github.com/galaxy-book/feishu-sdk-golang/core/util/http"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
 	"io"
 	"io/ioutil"
 	"mime/multipart"
 	"net/http"
 	"os"
 	"unsafe"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	http2 "github.com/3-F/feishu-sdk-golang/core/util/http"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
 func (t Tenant) NewFileUploadRequest(uri string, params map[string]string, paramName, path string) error {

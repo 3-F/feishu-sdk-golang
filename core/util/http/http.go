@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"crypto/tls"
 	"fmt"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
 	"io/ioutil"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
 const defaultContentType = "application/json"

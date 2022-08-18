@@ -1,10 +1,11 @@
 package sdk
 
 import (
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
 	"testing"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
 func TestTenant_GetScopes(t *testing.T) {

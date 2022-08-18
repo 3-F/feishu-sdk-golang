@@ -1,12 +1,13 @@
 package sdk
 
 import (
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/http"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
-	"gotest.tools/assert"
 	"testing"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	"github.com/3-F/feishu-sdk-golang/core/util/http"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
+	"gotest.tools/assert"
 )
 
 func TestUser_SearchUser(t *testing.T) {

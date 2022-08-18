@@ -1,10 +1,11 @@
 package http
 
 import (
-	"github.com/galaxy-book/feishu-sdk-golang/core/model/vo"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"gotest.tools/assert"
 	"testing"
+
+	"github.com/3-F/feishu-sdk-golang/core/model/vo"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"gotest.tools/assert"
 )
 
 func TestConvertToQueryParams(t *testing.T) {

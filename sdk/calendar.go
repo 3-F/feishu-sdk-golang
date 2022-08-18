@@ -2,11 +2,12 @@ package sdk
 
 import (
 	"fmt"
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	"github.com/galaxy-book/feishu-sdk-golang/core/model/vo"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/http"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	"github.com/3-F/feishu-sdk-golang/core/model/vo"
+	"github.com/3-F/feishu-sdk-golang/core/util/http"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
 //获取日历 https://open.feishu.cn/document/ukTMukTMukTM/uMDN04yM0QjLzQDN?lang=zh-CN

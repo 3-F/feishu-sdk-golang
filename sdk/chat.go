@@ -2,12 +2,13 @@ package sdk
 
 import (
 	"fmt"
-	"github.com/galaxy-book/feishu-sdk-golang/core/consts"
-	"github.com/galaxy-book/feishu-sdk-golang/core/model/vo"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/http"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/json"
-	"github.com/galaxy-book/feishu-sdk-golang/core/util/log"
 	"net/url"
+
+	"github.com/3-F/feishu-sdk-golang/core/consts"
+	"github.com/3-F/feishu-sdk-golang/core/model/vo"
+	"github.com/3-F/feishu-sdk-golang/core/util/http"
+	"github.com/3-F/feishu-sdk-golang/core/util/json"
+	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
 //获取用户所在的群列表 https://open.feishu.cn/document/ukTMukTMukTM/uQzMwUjL0MDM14CNzATN
