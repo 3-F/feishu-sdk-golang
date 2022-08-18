@@ -21,6 +21,11 @@ func (t Tenant) SendMessage(msg vo.MsgVo) (*vo.MsgResp, error) {
 	return respVo, nil
 }
 
+//发送消息卡片V1: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/create
+func (t Tenant) SendMessageV1() {
+
+}
+
 //发送消息卡片 https://open.feishu.cn/document/ukTMukTMukTM/uYTNwUjL2UDM14iN1ATN
 func (t Tenant) SendMessageBatch(msg vo.BatchMsgVo) (*vo.MsgResp, error) {
 	reqBody := json.ToJsonIgnoreError(msg)
