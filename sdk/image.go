@@ -15,17 +15,17 @@ import (
 	"github.com/3-F/feishu-sdk-golang/core/util/log"
 )
 
-func (t Tenant) NewFileUploadRequest(uri string, params map[string]string, paramName, path string) error {
+func (t Tenant) NewFileUploadRequest(uri string, params map[string]string, paramName, path string) (string, error) {
 	file, err := os.Open(path)
 	if err != nil {
-		return err
+		return "", err
 	}
 	defer file.Close()
 	body := &bytes.Buffer{}
 	writer := multipart.NewWriter(body)
 	part, err := writer.CreateFormFile(paramName, path)
 	if err != nil {
-		return err
+		return "", err
 	}
 	_, err = io.Copy(part, file)
 	for key, val := range params {
@@ -34,7 +34,7 @@ func (t Tenant) NewFileUploadRequest(uri string, params map[string]string, param
 	writer.WriteField("image_type", "message")
 	err = writer.Close()
 	if err != nil {
-		return err
+		return "", err
 	}
 	request, err := http.NewRequest("POST", uri, body)
 	request.Header.Set("Content-Type", writer.FormDataContentType())
@@ -47,11 +47,11 @@ func (t Tenant) NewFileUploadRequest(uri string, params map[string]string, param
 	respBytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err.Error())
-		return err
+		return "", err
 	}
 	str := (*string)(unsafe.Pointer(&respBytes))
-	fmt.Println(*str)
-	return err
+
+	return *str, err
 }
 
 //func (t Tenant) GetImage(imageKey string) ([]byte, error) {

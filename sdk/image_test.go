@@ -29,7 +29,7 @@ func TestTenant_NewFileUploadRequest(t *testing.T) {
 	//		data, "image", "C:\\Users\\admin\\Desktop\\11111.png"))
 
 	data := make(map[string]string)
-	resp := tenant.NewFileUploadRequest("https://open.feishu.cn/open-apis/image/v4/put/", data, "image", "C:\\Users\\admin\\Desktop\\12345.png")
+	_, resp := tenant.NewFileUploadRequest("https://open.feishu.cn/open-apis/image/v4/put/", data, "image", "C:\\Users\\admin\\Desktop\\12345.png")
 	t.Log(json.ToJsonIgnoreError(resp))
 }
 
